@@ -31,8 +31,8 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.github.dora4:dora:1.1.9")
 
-    // Apollo依赖RxAndroid2,请使用最新的版本
-    api("io.reactivex.rxjava2:rxandroid:2.0.1")
+    // Apollo依赖RxAndroid2，请使用最新的版本
+    api("io.reactivex.rxjava2:rxandroid:2.1.0")
     // Apollo的核心库
     api("com.github.lsxiao.Apollo:core:1.0.2")
     // Apollo的编译时注解处理器
