@@ -13,6 +13,21 @@ allprojects {
 }
 // 添加以下代码到app模块的build.gradle
 dependencies {
-    implementation 'com.github.dora4:dora-apollo-support:1.0'
+    implementation 'com.github.dora4:dora-apollo-support:1.1'
 }
+```
+在AndroidManifest中加入配置。
+```xml
+<application>
+        <meta-data
+            android:name="dora.lifecycle.config.ApolloGlobalConfig"
+            android:value="GlobalConfig" /
+</application>
+```
+你可以使用Apollo.emit()发送事件，并在Activity和Fragment中可以直接接收事件，在其他类需要在初始化的时候手动调用Apollo.bind(this)才能接收到事件。
+```kotlin
+   @Receive(ApolloEvent.YOUR_CUSTOM_EVENT)
+    fun onReceiveEvent()
+        // 你的事件处理逻辑
+    }
 ```
