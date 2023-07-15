@@ -16,6 +16,9 @@ dependencies {
     implementation 'com.github.dora4:dora-apollo-support:1.1'
 }
 ```
+
+#### 使用方式
+
 在AndroidManifest中加入配置。
 ```xml
 <application>
