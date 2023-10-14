@@ -35,8 +35,6 @@ dependencies {
     api("io.reactivex.rxjava2:rxandroid:2.1.0")
     // Apollo的核心库
     api("com.github.lsxiao.Apollo:core:1.0.2")
-    // Apollo的编译时注解处理器
-    kapt("com.github.lsxiao.Apollo:processor:1.0.2")
 }
 
 afterEvaluate {
@@ -46,7 +44,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.dora4"
                 artifactId = "dora-apollo-support"
-                version = "1.1"
+                version = "1.3"
             }
         }
     }
