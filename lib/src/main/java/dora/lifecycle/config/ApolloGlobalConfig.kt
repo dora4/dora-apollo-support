@@ -9,24 +9,25 @@ import dora.lifecycle.application.ApplicationLifecycleCallbacks
 import dora.lifecycle.fragment.ApolloFragmentLifecycle
 
 class ApolloGlobalConfig : GlobalConfig {
+
     override fun injectApplicationLifecycle(
-        context: Context?,
-        lifecycles: MutableList<ApplicationLifecycleCallbacks>?
+        context: Context,
+        lifecycles: MutableList<ApplicationLifecycleCallbacks>
     ) {
-        lifecycles!!.add(ApolloAppLifecycle())
+        lifecycles.add(ApolloAppLifecycle())
     }
 
     override fun injectActivityLifecycle(
-        context: Context?,
-        lifecycles: MutableList<Application.ActivityLifecycleCallbacks>?
+        context: Context,
+        lifecycles: MutableList<Application.ActivityLifecycleCallbacks>
     ) {
-        lifecycles!!.add(ApolloActivityLifecycle())
+        lifecycles.add(ApolloActivityLifecycle())
     }
 
     override fun injectFragmentLifecycle(
-        context: Context?,
-        lifecycles: MutableList<FragmentManager.FragmentLifecycleCallbacks>?
+        context: Context,
+        lifecycles: MutableList<FragmentManager.FragmentLifecycleCallbacks>
     ) {
-        lifecycles!!.add(ApolloFragmentLifecycle())
+        lifecycles.add(ApolloFragmentLifecycle())
     }
 }

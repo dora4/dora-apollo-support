@@ -27,9 +27,9 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.10.1")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.github.dora4:dora:1.1.9")
+    implementation("com.github.dora4:dora:1.1.46")
 
     // Apollo依赖RxAndroid2，请使用最新的版本
     api("io.reactivex.rxjava2:rxandroid:2.1.0")
@@ -44,7 +44,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.dora4"
                 artifactId = "dora-apollo-support"
-                version = "1.3"
+                version = "1.4"
             }
         }
     }
