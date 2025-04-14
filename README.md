@@ -14,7 +14,7 @@ allprojects {
 // 添加以下代码到app模块的build.gradle.kts
 dependencies {
     // 扩展包必须在有主框架dora的情况下使用
-    implementation("com.github.dora4:dora:1.3.3")
+    implementation("com.github.dora4:dora:1.3.5")
     implementation("com.github.dora4:dora-apollo-support:1.4")
     // Apollo的编译时注解处理器
     kapt("com.github.lsxiao.Apollo:processor:1.0.2")
